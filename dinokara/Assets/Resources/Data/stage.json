@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "stage_name": "Stage1",
+        "time": 10,
+        "description": "Normal Block 5",
+        "blocks": [
+            {
+                "normal": 5
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "stage_name": "Stage2",
+        "time": 10,
+        "description": "Normal Block 5 and Hard Block 5",
+        "blocks": [
+            {
+                "normal": 5,
+                "hard": 5
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "stage_name": "Stage3",
+        "time": 15,
+        "description": "Normal Block 10 and Hard Block 5, Time 15 minutes.",
+        "blocks": [
+            {
+                "normal": 10,
+                "hard": 5
+            }
+        ]
+    }
+]
