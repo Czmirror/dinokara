@@ -4,48 +4,39 @@ using UnityEngine;
 using System;
 using System.IO;
 
-public class JsonHelper
+namespace DinokarA.Assets.Scripts.Data
 {
-    public static List<T> ListFromJson<T>(string json)
+    public class JsonHelper
     {
-        var newJson = "{ \"list\": " + json + "}";
-        Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
-        return wrapper.list;
+        public static List<T> ListFromJson<T>(string json)
+        {
+            var newJson = "{ \"list\": " + json + "}";
+            Wrapper<T> wrapper = JsonUtility.FromJson<Wrapper<T>>(newJson);
+            return wrapper.list;
+        }
+
+        [Serializable]
+        class Wrapper<T>
+        {
+            public List<T> list;
+        }
     }
 
-    [Serializable]
-    class Wrapper<T>
+    public class LoadDataStage : MonoBehaviour
     {
-        public List<T> list;
-    }
-}
-
-[Serializable]
-public class Stage
-{
-    public int id;
-    public string stage_name;
-    public int time;
-    public string description;
-    public List<Block> block;
-}
-
-public class Block
-{
-    public int normal;
-    public int hard;
-}
-
-
-public class LoadDataStage : MonoBehaviour
-{
-    void Start()
-    {
-        string json = Resources.Load<TextAsset>("Data/stage").ToString();
-        var _stage = JsonHelper.ListFromJson<Stage>(json);
-        ;
-        Debug.Log(_stage[0].id);
-        Debug.Log(_stage[0].stage_name);
+        
+    
+        void Start()
+    
+        {
+        
+            string json = Resources.Load<TextAsset>("Data/stage").ToString();
+            var _stage = JsonHelper.ListFromJson<Stage>(json);
 
     }
+    
+    
+    }
+
 }
+

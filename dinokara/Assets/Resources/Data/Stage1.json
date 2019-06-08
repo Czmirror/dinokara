@@ -1,0 +1,7 @@
+{
+    "id": 1,
+    "stage_name": "Stage1",
+    "time": 10,
+    "description": "Normal Block 5",
+    "block_normal": 5
+}

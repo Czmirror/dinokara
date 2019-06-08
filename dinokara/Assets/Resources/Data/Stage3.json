@@ -1,0 +1,8 @@
+{
+    "id": 3,
+    "stage_name": "Stage3",
+    "time": 15,
+    "description": "Normal Block 10 and Hard Block 5, Time 15 minutes.",
+    "block_normal": 10,
+    "hard_normal": 5
+}

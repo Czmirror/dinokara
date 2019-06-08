@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 namespace DinokarA.Assets.Scripts.UI
 {
@@ -10,7 +9,7 @@ namespace DinokarA.Assets.Scripts.UI
 
         public void PushButton()
         {
-            SceneManager.LoadScene(loadScene);
+            SceneMove.Movement(loadScene);
         }
     }
 }
