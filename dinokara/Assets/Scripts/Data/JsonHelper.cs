@@ -22,21 +22,5 @@ namespace DinokarA.Assets.Scripts.Data
         }
     }
 
-    public class LoadDataStage : MonoBehaviour
-    {
-        
-    
-        void Start()
-    
-        {
-        
-            string json = Resources.Load<TextAsset>("Data/stage").ToString();
-            var _stage = JsonHelper.ListFromJson<Stage>(json);
-
-    }
-    
-    
-    }
-
 }
 

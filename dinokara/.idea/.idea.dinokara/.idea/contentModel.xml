@@ -11,7 +11,7 @@
             <e p="dragMakeBlock.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
-            <e p="LoadDataStage.cs" t="Include" />
+            <e p="JsonHelper.cs" t="Include" />
             <e p="LoadStageData.cs" t="Include" />
             <e p="Stage.cs" t="Include" />
           </e>
@@ -20,7 +20,9 @@
           </e>
           <e p="UI" t="Include">
             <e p="ButtonSceneMove.cs" t="Include" />
-            <e p="GameSceneSetStage.cs" t="Include" />
+            <e p="GameScene" t="Include">
+              <e p="SetStageName.cs" t="Include" />
+            </e>
             <e p="SceneMove.cs" t="Include" />
             <e p="SceneMoveBlockEditor.cs" t="Include" />
           </e>

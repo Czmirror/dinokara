@@ -14,7 +14,6 @@ public class LoadStageData : MonoBehaviour
     }
 
     private Stage currentStageData;
-
     public Stage CurrentStageData
     {
         get { return currentStageData; }
@@ -24,12 +23,11 @@ public class LoadStageData : MonoBehaviour
     void Start()
     {
         var _stage_name = PlayerPrefs.GetString("CurrentStage", "Stage1");
-        Debug.Log(_stage_name);
         var _jsonPath = "Data/" + _stage_name;
         
         string json = Resources.Load<TextAsset>(_jsonPath).ToString();
-        List<Stage> _stage = JsonHelper.ListFromJson<Stage>(json);
-        currentStageData = _stage[0];
+        Stage _stage = JsonUtility.FromJson<Stage>(json);
+        currentStageData = _stage;
     }
 
 }
