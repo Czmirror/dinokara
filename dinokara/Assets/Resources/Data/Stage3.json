@@ -4,5 +4,5 @@
     "time": 15,
     "description": "Normal Block 10 and Hard Block 5, Time 15 minutes.",
     "block_normal": 10,
-    "hard_normal": 5
+    "block_hard": 5
 }

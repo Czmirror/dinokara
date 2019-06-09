@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using DinokarA.Assets.Scripts.Data;
 using UnityEngine;
 
-
+namespace DinokarA.Assets.Scripts.Manager
+{
+    
 public class LoadStageData : MonoBehaviour
 {
     [SerializeField]
@@ -31,3 +33,6 @@ public class LoadStageData : MonoBehaviour
     }
 
 }
+
+}
+

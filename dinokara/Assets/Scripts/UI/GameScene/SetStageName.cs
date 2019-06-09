@@ -1,6 +1,7 @@
-using DinokarA.Assets.Scripts.Data;
-using TMPro;
 using UnityEngine;
+using TMPro;
+using DinokarA.Assets.Scripts.Data;
+using DinokarA.Assets.Scripts.Manager;
 
 namespace DinokarA.Assets.Scripts.UI
 {

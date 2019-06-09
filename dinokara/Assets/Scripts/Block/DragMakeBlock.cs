@@ -16,7 +16,7 @@ namespace DinokarA.Assets.Scripts.Block
             if (!makeFlag)
             {
                 var _position = gameObject.transform.position;
-                Instantiate(_block, _position, Quaternion.identity);
+                //Instantiate(_block, _position, Quaternion.identity);
                 makeFlag = true;
             }
         }
