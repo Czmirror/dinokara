@@ -3,36 +3,34 @@ using System.Collections.Generic;
 using DinokarA.Assets.Scripts.Data;
 using UnityEngine;
 
-namespace DinokarA.Assets.Scripts.Manager
+namespace DinokarA.Assets.Scripts.Data
 {
-    
-public class LoadStageData : MonoBehaviour
-{
-    [SerializeField]
-    private string currentStageName;
-    public string CurrentStage
+    public class LoadStageData : MonoBehaviour
     {
-        get { return currentStageName; }
-    }
+        // 現在のステージ名
+        [SerializeField] private string currentStageName;
 
-    private Stage currentStageData;
-    public Stage CurrentStageData
-    {
-        get { return currentStageData; }
-    }
+        // 外部向け現在のステージ名
+        public string CurrentStage
+        {
+            get { return currentStageName; }
+        }
 
-    
-    void Start()
-    {
-        var _stage_name = PlayerPrefs.GetString("CurrentStage", "Stage1");
-        var _jsonPath = "Data/" + _stage_name;
-        
-        string json = Resources.Load<TextAsset>(_jsonPath).ToString();
-        Stage _stage = JsonUtility.FromJson<Stage>(json);
-        currentStageData = _stage;
-    }
+        private Stage currentStageData; // 現在のステージデーター
 
+        // 外部向け現在のステージデーター
+        public Stage CurrentStageData 
+        {
+            get { return currentStageData; }
+        }
+
+
+        // JSONからステージ情報を取得
+        void Start()
+        {
+            Stage _stage = GetStageData.GetStage();
+            
+            currentStageData = _stage;
+        }
+    }
 }
-
-}
-

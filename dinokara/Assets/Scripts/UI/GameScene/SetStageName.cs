@@ -7,16 +7,14 @@ namespace DinokarA.Assets.Scripts.UI
 {
     public class SetStageName : MonoBehaviour
     {
-        [SerializeField] private GameObject blockEditorManager;
-        [SerializeField] private LoadStageData loadStageData;
-        
+        [SerializeField] private Stage stage;
+
         private void Update()
         {
-            if (loadStageData == null)
+            if (stage == null)
             {
-                loadStageData = blockEditorManager.GetComponent<LoadStageData>();
-                Stage _stage = blockEditorManager.GetComponent<LoadStageData>().CurrentStageData;
-                gameObject.GetComponent<TextMeshProUGUI>().text = _stage.stage_name;
+                stage = GetStageData.GetStage();
+                gameObject.GetComponent<TextMeshProUGUI>().text = stage.stage_name;
             }
         }
     }
