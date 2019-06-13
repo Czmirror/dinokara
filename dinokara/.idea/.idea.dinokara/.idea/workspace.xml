@@ -23,7 +23,10 @@
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dacdbc19-729f-4f40-81a8-2b5fda218303" name="Default Changelist" comment="" />
+    <list default="true" id="dacdbc19-729f-4f40-81a8-2b5fda218303" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dinokara/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dinokara/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Title.unity" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/GetPlayerPrefs.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <marker date="1560145109308" expanded="true" signature="58:324" ph="{...}" />
                 <marker date="1560145109308" expanded="true" signature="108:322" ph="{...}" />
@@ -317,12 +320,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559408124944</updated>
-      <workItem from="1559408127667" duration="36164000" />
+      <workItem from="1559408127667" duration="36425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36164000" />
+    <option name="totallyTimeSpent" value="36425000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,7 +579,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Data/GetPlayerPrefs.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
             <marker date="1560145109308" expanded="true" signature="58:324" ph="{...}" />
             <marker date="1560145109308" expanded="true" signature="108:322" ph="{...}" />
