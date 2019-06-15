@@ -22,7 +22,9 @@ namespace DinokarA.Assets.Scripts.Manager
             stage = this.GetComponent<LoadStageData>().CurrentStageData;
             
             // 各ブロックの生成処理（各ブロックのメソッド CreateBlockを実施（jsonに記載されている回数分実施）
+            var _normalBlock = Resources.Load("Prefabs/NormalBlock");
             
+
         }
 
         
