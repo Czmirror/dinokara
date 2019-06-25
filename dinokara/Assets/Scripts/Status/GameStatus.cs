@@ -58,7 +58,7 @@ namespace DinokarA.Assets.Scripts.Status
 
     }
     
-    // ゲームステートクラス ゲームクリア
+    // ゲームステートクラス ゲーム中
     public class GameStateGamePlay : GameState
     {
         

@@ -1,4 +1,5 @@
 ﻿using System;
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,6 +30,11 @@ namespace DinokarA.Assets.Scripts.Manager
         void Start()
         {
             GameStateProcessor.GameState = GameStateBlockSetup;
+            GameStateBlockSetup.execDelegate = BlockSetup;
+            GameStateGameReady.execDelegate = GameReady;
+            GameStateGamePlay.execDelegate = GamePlay;
+            GameStateGameClear.execDelegate = GameClear;
+            GameStateGameOver.execDelegate = GameOver;
         }
 
         // ブロック設置処理
@@ -40,11 +46,13 @@ namespace DinokarA.Assets.Scripts.Manager
         // ゲーム開始処理
         public void GameReady()
         {
+            // 5秒後にゲームプレイ処理へ遷移
             Observable
                 .Timer(TimeSpan.FromSeconds(5))
                 .Subscribe(x => GameStateProcessor.GameState = GameStateGamePlay);
         }
 
+        // ゲームプレイ処理
         public void GamePlay()
         {
             
