@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
 using DinokarA.Assets.Scripts.Status;
+using UnityEngine.Analytics;
 
 namespace DinokarA.Assets.Scripts.Manager
 {
@@ -20,6 +22,7 @@ namespace DinokarA.Assets.Scripts.Manager
         public GameStateProcessor GameStateProcessor = new GameStateProcessor();
         public GameStateBlockSetup GameStateBlockSetup = new GameStateBlockSetup();
         public GameStateGameReady GameStateGameReady = new GameStateGameReady();
+        public GameStateGamePlay GameStateGamePlay = new GameStateGamePlay();
         public GameStateGameClear GameStateGameClear = new GameStateGameClear();
         public GameStateGameOver GameStateGameOver = new GameStateGameOver();
 
@@ -28,6 +31,36 @@ namespace DinokarA.Assets.Scripts.Manager
             GameStateProcessor.GameState = GameStateBlockSetup;
         }
 
+        // ブロック設置処理
+        public void BlockSetup()
+        {
+            
+        }
+
+        // ゲーム開始処理
+        public void GameReady()
+        {
+            Observable
+                .Timer(TimeSpan.FromSeconds(5))
+                .Subscribe(x => GameStateProcessor.GameState = GameStateGamePlay);
+        }
+
+        public void GamePlay()
+        {
+            
+        }
+
+        // ゲームクリア処理
+        public void GameClear()
+        {
+            
+        }
+
+        // ゲームオーバー処理
+        public void GameOver()
+        {
+            
+        }
     }
 
 }

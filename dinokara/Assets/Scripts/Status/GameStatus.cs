@@ -58,7 +58,18 @@ namespace DinokarA.Assets.Scripts.Status
 
     }
     
-    // ゲームステートクラス ゲーム開始
+    // ゲームステートクラス ゲームクリア
+    public class GameStateGamePlay : GameState
+    {
+        
+        public override string getStateName()
+        {
+            return "GameStateGamePlay";
+        }
+
+    }
+    
+    // ゲームステートクラス ゲームクリア
     public class GameStateGameClear : GameState
     {
         
@@ -69,7 +80,7 @@ namespace DinokarA.Assets.Scripts.Status
 
     }
     
-    // ゲームステートクラス ゲーム開始
+    // ゲームステートクラス ゲームオーバー
     public class GameStateGameOver : GameState
     {
         
