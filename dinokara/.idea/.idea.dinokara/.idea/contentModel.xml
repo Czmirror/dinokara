@@ -402,6 +402,10 @@
           </e>
           <e p="Manager" t="Include">
             <e p="BlockManager.cs" t="Include" />
+            <e p="GameStatusManager.cs" t="Include" />
+          </e>
+          <e p="Status" t="Include">
+            <e p="GameStatus.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="ButtonSceneMove.cs" t="Include" />

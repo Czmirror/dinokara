@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DinokarA.Assets.Scripts.Data;
 using UnityEngine;
 
+// ボツ予定
 namespace DinokarA.Assets.Scripts.Data
 {
     public class LoadStageData : MonoBehaviour
