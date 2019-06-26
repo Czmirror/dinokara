@@ -7,19 +7,6 @@ namespace DinokarA.Assets.Scripts.Block
 
     public class DragMakeBlock : MonoBehaviour
     {
-        [SerializeField] private GameObject _block;
-
-        [SerializeField] private bool makeFlag = false;
-
-        private void OnMouseDown()
-        {
-            if (!makeFlag)
-            {
-                var _position = gameObject.transform.position;
-                //Instantiate(_block, _position, Quaternion.identity);
-                makeFlag = true;
-            }
-        }
 
         private void OnMouseDrag()
         {

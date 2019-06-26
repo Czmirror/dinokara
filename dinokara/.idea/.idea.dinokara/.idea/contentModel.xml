@@ -397,7 +397,6 @@
             <e p="GetPlayerPrefs.cs" t="Include" />
             <e p="GetStageData.cs" t="Include" />
             <e p="JsonHelper.cs" t="Include" />
-            <e p="LoadStageData.cs" t="Include" />
             <e p="Stage.cs" t="Include" />
           </e>
           <e p="Manager" t="Include">
