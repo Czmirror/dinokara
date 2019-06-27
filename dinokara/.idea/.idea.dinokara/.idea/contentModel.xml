@@ -390,7 +390,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="Block" t="Include">
-            <e p="dragMakeBlock.cs" t="Include" />
+            <e p="DragBlock.cs" t="Include" />
             <e p="IBlock.cs" t="Include" />
           </e>
           <e p="Data" t="Include">
@@ -398,6 +398,9 @@
             <e p="GetStageData.cs" t="Include" />
             <e p="JsonHelper.cs" t="Include" />
             <e p="Stage.cs" t="Include" />
+          </e>
+          <e p="Display" t="Include">
+            <e p="IDisplay.cs" t="Include" />
           </e>
           <e p="Manager" t="Include">
             <e p="BlockManager.cs" t="Include" />

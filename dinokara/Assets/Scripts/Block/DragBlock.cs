@@ -5,7 +5,7 @@ using UnityEngine;
 namespace DinokarA.Assets.Scripts.Block
 {
 
-    public class DragMakeBlock : MonoBehaviour
+    public class DragBlock : MonoBehaviour
     {
 
         private void OnMouseDrag()
