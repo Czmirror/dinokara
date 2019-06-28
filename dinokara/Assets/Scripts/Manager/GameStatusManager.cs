@@ -1,11 +1,9 @@
 ﻿using System;
-
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UniRx;
 using DinokarA.Assets.Scripts.Status;
-using UnityEngine.Analytics;
 
 namespace DinokarA.Assets.Scripts.Manager
 {
@@ -40,12 +38,17 @@ namespace DinokarA.Assets.Scripts.Manager
         // ブロック設置処理
         public void BlockSetup()
         {
+            // 必要なオブジェクトの表示処理
             
         }
 
         // ゲーム開始処理
         public void GameReady()
         {
+            // 必要なオブジェクトの表示処理
+            
+            // 必要なオブジェクトの非表示処理
+            
             // 5秒後にゲームプレイ処理へ遷移
             Observable
                 .Timer(TimeSpan.FromSeconds(5))
@@ -55,18 +58,27 @@ namespace DinokarA.Assets.Scripts.Manager
         // ゲームプレイ処理
         public void GamePlay()
         {
+            // 必要なオブジェクトの表示処理
+            
+            // 必要なオブジェクトの非表示処理
             
         }
 
         // ゲームクリア処理
         public void GameClear()
         {
+            // 必要なオブジェクトの表示処理
+            
+            // 必要なオブジェクトの非表示処理
             
         }
 
         // ゲームオーバー処理
         public void GameOver()
         {
+            // 必要なオブジェクトの表示処理
+            
+            // 必要なオブジェクトの非表示処理
             
         }
     }
