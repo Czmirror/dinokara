@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DinokarA.Assets.Scripts.Block;
 
 namespace DinokarA.Assets.Scripts.Block
 {
 
-    public class DragBlock : MonoBehaviour
+    public class DragBlock : BlockBase
     {
 
         private void OnMouseDrag()
@@ -22,6 +23,8 @@ namespace DinokarA.Assets.Scripts.Block
             mousePointInWorld.z = this.transform.position.z;
             this.transform.position = mousePointInWorld;
         }
+        
+        
 
     }
 

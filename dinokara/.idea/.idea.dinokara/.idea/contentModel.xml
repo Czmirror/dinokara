@@ -401,7 +401,9 @@
           </e>
           <e p="Display" t="Include">
             <e p="IDisplay.cs" t="Include" />
+            <e p="ObjectDisplay.cs" t="Include" />
           </e>
+          <e p="GameObjectExtensions.cs" t="Include" />
           <e p="Manager" t="Include">
             <e p="BlockManager.cs" t="Include" />
             <e p="GameStatusManager.cs" t="Include" />
@@ -412,6 +414,7 @@
           <e p="UI" t="Include">
             <e p="ButtonSceneMove.cs" t="Include" />
             <e p="GameScene" t="Include">
+              <e p="ButtonGameStart.cs" t="Include" />
               <e p="SetStageName.cs" t="Include" />
             </e>
             <e p="SceneMove.cs" t="Include" />

@@ -132,8 +132,9 @@ GameObject:
   - component: {fileID: 116010536}
   - component: {fileID: 116010535}
   - component: {fileID: 116010534}
+  - component: {fileID: 116010537}
   m_Layer: 5
-  m_Name: GameStartButton
+  m_Name: ButtonGameStart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -241,6 +242,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116010532}
   m_CullTransparentMesh: 0
+--- !u!114 &116010537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116010532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01a958265148460996a198d4d04384d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,10 +402,10 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306203857}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &306203859
@@ -448,7 +461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 306203857}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.5, z: 0}
+  m_LocalPosition: {x: 0, y: -2, z: 0}
   m_LocalScale: {x: 7, y: 5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -782,7 +795,7 @@ GameObject:
   - component: {fileID: 476196183}
   - component: {fileID: 476196182}
   m_Layer: 5
-  m_Name: StageSelectButton
+  m_Name: ButtonStageSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1780,7 +1793,7 @@ GameObject:
   - component: {fileID: 1774962510}
   - component: {fileID: 1774962509}
   m_Layer: 5
-  m_Name: ResetButton
+  m_Name: ButtonReset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
